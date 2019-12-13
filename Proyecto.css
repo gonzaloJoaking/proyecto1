@@ -1,0 +1,304 @@
+/*Estructura de cajas Firts Movile
+
+1-imagen1
+2-celebra
+3-brunch
+4-imagen2
+5-pan
+6-tartas
+7-dulces
+8-ingredientes
+9-contacto
+10-ubicacion
+11-footer
+
+*/
+/*1 Fondo con imagenes---------------------*/
+#imagen1{
+    background-image:url(../Proyecto/Imágenes/Fondo1.jpg);
+    padding-bottom: 5%;
+}
+#imagen2{
+    background-image:url(../Proyecto/Imágenes/Fondo2.jpg);
+    padding: 20% 2%;
+}
+
+.imagen{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+#imagen1 h1{
+    padding-top: 20%;
+    padding-bottom: 5%;
+}
+
+#imagen1 p{
+    padding-bottom: 30%;
+
+}
+
+#imagen1 img{
+    padding-top: 3px;
+    padding-left: 3px;
+    display: block;
+}
+
+#imagen2 a{
+    text-decoration: none;
+    color:#f5f0ed;
+    text-align: center;
+    border:3px solid #f5f0ed;
+    margin:5% 1%;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+
+/*Fondos rojos---------------------*/
+.rojo{
+    background-color: #d03b40;
+    color: #ded6c0;
+    min-height: 300px;
+    width: 100%;
+    padding: 5% 1%;
+}
+
+.rojo a{
+    color: #ded6c0;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/*Fondos beige----------------------------*/
+.beige{
+   background-color: #ded6c0;
+   color: #d03b40;
+   min-height: 300px;
+   width: 100%;
+   padding: 5% 1%;
+}
+
+.beige a{
+    color: #d03b40;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/*Fondos Blancos---------------------------*/
+
+.blanco{
+    background-color: #f5f0ed;
+    color: #3c3c3b;
+    min-height: 300px;
+    width: 100%;
+    padding: 5% 1%;
+    text-align: left;
+}
+
+.blanco img{
+    display: block;
+    height: 90px;
+    margin: 10px auto;
+}
+
+
+
+/*Fondo negro--------------------------*/
+.negro{
+    background-color: #241d1b;
+    color: white;
+    min-height: 300x;
+    width: 100%;
+    padding:5% 1%;
+}
+
+
+/*Transiciones*/
+a{
+    transition: 0.5s font-size 0s;
+}
+a:hover{
+    font-size:18px;
+}
+
+
+/*Estilos Generales*--------------------------------*/
+
+*{box-sizing: border-box;
+}
+
+h1, h2, h3{
+    font-weight: bolder;
+    text-align: center;  
+}
+
+h1{
+    font-size: 44px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+body{
+    font-size:16px;
+    line-height: 1;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+}
+
+
+a{
+    font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*-media queries-------mobile--------------------------*/
+
+@media screen and (max-width: 820px){
+    .js .navegacion{
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .5s;
+        position: absolute;
+        top: 56px;
+        right: 0px;
+        background:  #d03b40;
+        
+    }
+
+    .js .navegacion a{
+        padding:5px 10px;
+        color: #ded6c0;
+
+    }
+
+    .js .navegacion.menu-desplegado{
+        max-height: 200px;
+
+    }
+
+    .js .navegacion.menu-desplegado ul{
+        list-style: none;
+    }
+}
+
+@media screen and (min-width: 601px){
+    .blanco img{
+        float: left;
+        margin-left: 5%;
+        min-height: 150px;
+        display: block;
+    }
+
+    .blanco p{
+       text-align: center;
+    }
+    #imagen1 img{
+        height: 65px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+   
+}
+@media screen and (min-width: 821px){
+    .lanzador-menu{
+        display: none;
+    }
+
+    .navegacion{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: white;
+    }
+
+
+    .navegacion li{
+        display:inline-block;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 988px){
+    .blanco img{
+        min-height: 200px;
+    }
+
+    .imagen{
+        height: 100vh;
+    }
+
+    .blanco, .beige, .rojo{
+        width: 50%;
+        float: left;
+        height: 400px;
+    }
+
+#imagen1 img{
+    height: 80px;
+    
+}
+
+    .clearflix:before, .clearflix:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .contenedor1{
+        max-height: 400px;
+    }
+
+}
+
+
+
+
+
+/*Estilos de menu*/
+
+.lanzador-menu{
+    text-decoration: none;
+    color: #ded6c0;
+    background-color: #d03b40;
+    border-radius: 3px;
+    position: absolute;
+    right: 20px;
+    top:30px;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+}
+
+.navegacion a{
+    display:block;
+    text-decoration: none;
+    color:#ded6c0;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
